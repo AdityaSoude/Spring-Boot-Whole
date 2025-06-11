@@ -1,0 +1,5 @@
+package com.First.Learn_Spring_framework.game;
+
+public interface GamingConsole {
+
+}

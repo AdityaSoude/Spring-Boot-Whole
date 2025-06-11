@@ -1,0 +1,17 @@
+package com.First.Learn_Spring_framework.game;
+
+public class ContraGame {
+
+	public void up() {
+		System.out.println("Aim up ");
+	}
+	public void down() {
+		System.out.println("Aim down");
+	}
+	public void left() {
+		System.out.println("fire ");
+	}
+	public void right() {
+		System.out.println("stop");
+	}
+}

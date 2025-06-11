@@ -1,0 +1,13 @@
+package Exercise01;
+
+import java.util.Arrays;
+
+public class BussinessCalculationService {
+	DataServices dataService;
+	
+	public int findMax() {
+		return Arrays.stream(dataService.retriveData()).max().orElse(0);
+	}
+	
+	
+}

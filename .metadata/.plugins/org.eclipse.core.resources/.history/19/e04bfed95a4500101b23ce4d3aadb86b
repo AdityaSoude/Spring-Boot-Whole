@@ -1,0 +1,26 @@
+package com.First.Learn_Spring_framework.examples.a1;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@ComponentScan("com.First.Learn_Spring_framework.game")
+public class DependencyInjectionGame01 {
+			
+	/*@Bean 
+	public GameRunner gamerunner( GamingConsole game) {
+		var gamerunner = new GameRunner(game);
+		return gamerunner;
+	}
+	*/
+	public static void main(String args[]) {
+		
+		try (var context = new AnnotationConfigApplicationContext(DependencyInjectionGame01.class)) {
+			
+		
+		}
+	}
+	
+}	

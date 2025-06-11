@@ -1,0 +1,14 @@
+package Exercise01;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class MySQLDataServices implements DataServices {
+
+	@Override
+	public int[] retriveData() {
+		
+		return new int[]{1,2,3,4,5};
+	}
+
+}

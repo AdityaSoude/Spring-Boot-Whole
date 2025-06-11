@@ -1,0 +1,32 @@
+package com.First.Learn_Spring_framework;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.First.Learn_Spring_framework.game.ContraGame;
+import com.First.Learn_Spring_framework.game.GameRunner;
+import com.First.Learn_Spring_framework.game.MarioGame;
+import com.First.Learn_Spring_framework.game.PackmanGame;
+
+public class App02HelloWorldSpring {
+
+	
+	public static void main(String args[]) {
+		//Launch Sprig Context 
+		var context =new AnnotationConfigApplicationContext(HelloWorldConfigurations.class);
+		
+		//Getting the bean  
+		System.out.println(context.getBean("name"));
+		
+		System.out.println(context.getBean("age"));
+		
+		System.out.println(context.getBean("person"));
+		
+		System.out.println(context.getBean("address2"));
+		
+		System.out.println(context.getBean(int.class));
+		
+		
+		
+	}
+	
+}	

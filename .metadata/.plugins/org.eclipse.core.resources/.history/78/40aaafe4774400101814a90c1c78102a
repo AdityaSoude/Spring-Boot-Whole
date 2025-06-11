@@ -1,0 +1,21 @@
+package com.First.Learn_Spring_framework;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.First.Learn_Spring_framework.game.ContraGame;
+import com.First.Learn_Spring_framework.game.GameRunner;
+import com.First.Learn_Spring_framework.game.GamingConsole;
+import com.First.Learn_Spring_framework.game.MarioGame;
+import com.First.Learn_Spring_framework.game.PackmanGame;
+
+public class App03GamingBasicJava {
+
+	
+	public static void main(String args[]) {
+		try (var context = new AnnotationConfigApplicationContext(GamingConfigurations.class)) {
+			
+			context.getBean(GamingConsole.class);
+		}
+	}
+	
+}	

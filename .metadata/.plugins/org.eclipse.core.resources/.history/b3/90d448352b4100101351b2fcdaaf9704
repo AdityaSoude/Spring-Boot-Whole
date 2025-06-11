@@ -1,0 +1,17 @@
+package com.First.Learn_Spring_framework.game;
+
+public class GameRunner {
+	ContraGame game;
+	
+	public GameRunner(ContraGame game){
+		this.game = game;
+	}
+
+	public void run_game() {
+		System.out.println("Currently running: "+ game);
+		game.down();
+		game.up();
+		game.left();
+		game.right();
+	}
+}

@@ -1,0 +1,11 @@
+package Exercise01;
+
+public class MonogoDbDataServices implements DataServices {
+
+	@Override
+	public int[] retriveData() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
