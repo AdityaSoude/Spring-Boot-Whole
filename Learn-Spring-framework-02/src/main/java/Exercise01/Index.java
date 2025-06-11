@@ -11,7 +11,7 @@ public class Index {
 
 		public static void main(String []args){
 			try (var context = new AnnotationConfigApplicationContext(Index.class)) {
-				//System.out.println(context.getBean(BussinessCalculationService.class).findMax());
+				System.out.println(context.getBean(BussinessCalculationService.class).findMax());
 			} catch (BeansException e) {
 			
 				e.printStackTrace();

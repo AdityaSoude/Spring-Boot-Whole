@@ -1,8 +1,0 @@
-package com.First.Learn_Spring_framework;
-
-import org.springframework.context.annotation.Configuration;
-
-@Configuration
-public class HelloWorldConfigurations {
-
-}
